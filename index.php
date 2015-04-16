@@ -12,7 +12,7 @@ if (array_key_exists("calc",$_POST)){
 	}
 
 	$comp = 1-$sum; 
-	echo "Soma: $sum<br> Complementar: $comp<br> <a href="">Voltar</a>";
+	echo "Soma: $sum<br> Complementar: $comp<br> <a href='http://www.brunodess.com.br/calcmodelos'>Voltar</a>";
 } else {
 	
 ?>
