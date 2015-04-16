@@ -18,13 +18,13 @@ if (array_key_exists("calc",$_POST)){
 ?>
 <form action="#" method="POST">
 	<input type="number" name="imin" />
-	<label for="imin">I min</label>
+	<label for="imin">I min</label><br>
 	<input type="number" name="imax" />
-	<label for="imax">I min</label>
+	<label for="imax">I max</label><br>
 	<input type="text" name="lambda" />
-	<label for="lambda">I min</label>
+	<label for="lambda">Lambda</label><br>
 	<input type="number" name="t" />
-	<label for="t">I min</label>
+	<label for="t">t</label><br>
 	<input type="submit" />
 </form>
 <?php } ?>
