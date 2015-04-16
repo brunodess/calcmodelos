@@ -8,7 +8,7 @@ if (array_key_exists("calc",$_POST){
 	$sum = 0;
 
 	for ($i = $imin; $i<=$imax; $i++){
-		$sum +=  ( (M_E^(-1*$lambda*$t)) * ( ($lambda*$t)^$i ) )/($i);
+		$sum +=  ( (M_E^(-1*$lambda*$t)) * ( ($lambda*$t)^$i ) )/(gmp_fact ($i));
 	}
 
 	$comp = 1-$sum; 
