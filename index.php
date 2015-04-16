@@ -1,6 +1,6 @@
 <?php
 
-if (array_key_exists("calc",$_POST){
+if (array_key_exists("calc",$_POST)){
 	$imin = $_POST['imin'];
 	$imax = $_POST['imax'];
 	$lambda = $_POST['lambda'];
