@@ -25,6 +25,7 @@ if (array_key_exists("calc",$_POST)){
 	<label for="lambda">Lambda</label><br>
 	<input type="number" name="t" />
 	<label for="t">t</label><br>
+	<input type="hidden" name="calc" value="poisson" />
 	<input type="submit" />
 </form>
 <?php } ?>
