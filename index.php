@@ -1,4 +1,11 @@
 <?php
+function getFactorial($num)
+{
+    $fact = 1;
+    for($i = 1; $i <= $num ;$i++)
+        $fact = $fact * $i;
+    return $fact;
+}
 
 if (array_key_exists("calc",$_POST)){
 	$imin = $_POST['imin'];
@@ -8,7 +15,7 @@ if (array_key_exists("calc",$_POST)){
 	$sum = 0;
 
 	for ($i = $imin; $i<=$imax; $i++){
-		$sum +=  ( (M_E^(-1*$lambda*$t)) * ( ($lambda*$t)^$i ) )/(gmp_fact ($i));
+		$sum +=  ( (M_E^(-1*$lambda*$t)) * ( ($lambda*$t)^$i ) )/(getFactorial($i));
 	}
 
 	$comp = 1-$sum; 
